@@ -32,13 +32,6 @@ onMounted(async () => {
 
   gsap.set(subtitle.value, { visibility: 'visible', y: 50, opacity: 0 })
   gsap.to(subtitle.value, {opacity: 1, y: 0, duration: 7, ease: 'power1' })
-  gsap.to('#icon-down', {
-    scrollTrigger: {
-      trigger: '.slider',
-      start: 'bottom center',
-    },
-    opacity: 0
-  })
 })
 
 </script>

@@ -33,7 +33,7 @@ export default <Partial<Config>>{
           '900': 'rgb(var(--color-red-plug-900))',
           '950': 'rgb(var(--color-red-plug-950))',
         },
-        
+        'base': '#dff4fa'
       },
       backgroundImage: {
         'deep-blue-space': 'var(--color-deep-blue-space)'

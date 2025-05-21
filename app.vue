@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="text-base">
     <div class="fixed inset-0 z-0 bg-deep-blue-space">
       <ClientOnly>
         <Vortex :base-hue="200" :range-y="300">
@@ -7,8 +7,8 @@
         </Vortex>  
       </ClientOnly>
     </div>
-    <div class="slider sections-width h-full flex flex-nowrap">
-      <section v-for="(componentSection, index) in components" :key="index" class="will-change-transform min-h-[100dvh] w-full flex justify-center items-center text-6xl px-2 md:px-4">
+    <div>
+      <section v-for="(componentSection, index) in components" :key="index" class="will-change-transform min-h-[100dvh] w-full px-2 md:px-4">
         <component :is="componentSection">
         </component>
       </section>
@@ -32,34 +32,82 @@ const components = shallowRef<Component[]>([
   SectionConnectWithUs
 ])
 
-let duration: number
-let sections: HTMLElement[]
-let sectionIncrement: number
-let timeline
-const sectionsWidth = ref<string>('')
-
 onMounted(() => {
-  duration = 10
-  sections = gsap.utils.toArray('section')
-  sectionsWidth.value = `${sections.length * 100}%`
-  sectionIncrement = duration / (sections.length - 1)
+  const sections: HTMLElement[] = gsap.utils.toArray('section')
 
-  timeline = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".slider",
-      pin: true,
-      scrub: 1,
-      snap: 1 / (sections.length - 1),
-      start: "top top",
-      end: "+=5000"
+  sections.forEach((section: HTMLElement, index: number) => {
+
+    if (index === 0) {
+      const timeline: GSAPTimeline = gsap.timeline({
+        scrollTrigger: {
+          trigger: section,
+          start: 'top top',
+          end: '+=100%',
+          pin: true,
+          scrub: true,
+          pinSpacing: false,
+        }
+      })
+
+      timeline.from(section, {
+        opacity: 1
+      })
+
+      timeline.to(section, {
+        opacity: 0
+      })
+
+      return
     }
-  });
 
-  timeline.to(sections, {
-    xPercent: -100 * (sections.length - 1),
-    duration: duration,
-    ease: "power1",
-  });
+    if(index == components.value.length - 1) {
+      const timeline: GSAPTimeline = gsap.timeline({
+        scrollTrigger: {
+          pin: true,
+          trigger: section,
+          start: 'top top',
+          end: 'top middle',
+          scrub: true,
+          pinSpacing: false,
+        }
+      })
+    
+      timeline.from(section, {
+        opacity: 0
+      })
+      
+
+      timeline.to(section, {
+        opacity: 1
+      })
+
+      return
+
+    }
+
+    const timeline: GSAPTimeline = gsap.timeline({
+      scrollTrigger: {
+        pin: true,
+        trigger: section,
+        end: '+=100%',
+        scrub: true,
+        pinSpacing: false,
+      }
+    })
+    
+    timeline.from(section, {
+      opacity: 0
+    })
+    
+
+    timeline.to(section, {
+      opacity: 1
+    })
+
+    timeline.to(section, {
+      opacity: 0
+    })
+  })
 })
 
 
@@ -67,9 +115,3 @@ const colorMode = useColorMode()
 
 onBeforeMount(() => colorMode.preference = 'dark')
 </script>
-
-<style scoped>
-.sections-width {
-  width: v-bind(sectionsWidth);
-}
-</style>
