@@ -15,6 +15,12 @@ export default <Partial<Config>>{
   ],
   theme: {
     extend: {
+      backdropBlur: {
+        xs: '1px',
+      },
+      fontSize: {
+        base: '1.25rem'
+      },
       fontFamily: {
         sans: ['Glacial Indifference'], //normal
         serif: ['Tan Mon Cheri'] //title

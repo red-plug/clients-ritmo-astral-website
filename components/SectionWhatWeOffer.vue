@@ -5,12 +5,12 @@
         Lo que ofrecemos
       </h2>
     </div>
-    <div class="md:col-span-1 flex items-center mt-4">
+    <div class="md:col-span-1 flex items-center mt-6">
       <div class="*:mt-3 tracking-wide px-6 md:w-3/5 mx-auto md:text-center">
         <p>
           Te invitamos a vivir una experiencia transformadora que alinea mente, alma y cuerpo:
         </p>
-        <ul class="list-disc list-inside space-y-2 text-base text-start pl-2 sm:pl-6 md:pl-14 lg:pl-20 xl:pl-24">
+        <ul class="list-disc list-inside space-y-2 text-base text-start ps-8">
           <li>
             <b class="font-sans">Meditación guiada:</b> para calmar la mente, reducir el estrés y abrir el corazón.
           </li>
