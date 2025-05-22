@@ -166,7 +166,7 @@ onMounted(() => {
 <style>
 .logo-path {
   fill: none;
-  stroke: #dff4fa;
+  stroke: #f2fcff;
   stroke-width: 1px;
   visibility: hidden;
 }

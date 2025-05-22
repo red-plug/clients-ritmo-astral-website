@@ -10,9 +10,6 @@ export default defineNuxtConfig({
         lang: 'es'
       },
     },
-    rootAttrs: {
-      class: 'overflow-x-hidden',
-    }
   },
   fonts: {
     families: [
