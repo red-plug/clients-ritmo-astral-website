@@ -13,7 +13,7 @@
       </clipPath>
     </defs>
     <g id="g580" transform="translate(3.8849814,5.283235)">
-      <g fill="#fafeff" fill-opacity="1" id="g151" transform="translate(-81.128573,-349.72007)">
+      <g fill="#ffffff" fill-opacity="1" id="g151" transform="translate(-81.128573,-349.72007)">
         <g transform="translate(149.7304,475.89194)" id="g149">
           <g id="g147">
             <path
@@ -23,7 +23,7 @@
           </g>
         </g>
       </g>
-      <g fill="#fafeff" fill-opacity="1" id="g159" transform="translate(-81.128573,-349.72007)">
+      <g fill="#ffffff" fill-opacity="1" id="g159" transform="translate(-81.128573,-349.72007)">
         <g transform="translate(261.0595,475.89194)" id="g157">
           <g id="g155">
             <path class="logo-path"
@@ -31,7 +31,7 @@
           </g>
         </g>
       </g>
-      <g fill="#fafeff" fill-opacity="1" id="g167" transform="translate(-81.128573,-349.72007)">
+      <g fill="#ffffff" fill-opacity="1" id="g167" transform="translate(-81.128573,-349.72007)">
         <g transform="translate(290.74726,475.89194)" id="g165">
           <g id="g163">
             <path
@@ -41,7 +41,7 @@
           </g>
         </g>
       </g>
-      <g fill="#fafeff" fill-opacity="1" id="g175" transform="translate(-81.128573,-349.72007)">
+      <g fill="#ffffff" fill-opacity="1" id="g175" transform="translate(-81.128573,-349.72007)">
         <g transform="translate(400.83935,475.89194)" id="g173">
           <g id="g171">
             <path
@@ -51,7 +51,7 @@
           </g>
         </g>
       </g>
-      <g fill="#fafeff" fill-opacity="1" id="g183" transform="translate(-81.128573,-349.72007)">
+      <g fill="#ffffff" fill-opacity="1" id="g183" transform="translate(-81.128573,-349.72007)">
         <g transform="translate(524.29094,475.89194)" id="g181">
           <g id="g179">
             <path
@@ -61,7 +61,7 @@
           </g>
         </g>
       </g>
-      <g fill="#fafeff" fill-opacity="1" id="g191" transform="translate(-81.128573,-349.72007)">
+      <g fill="#ffffff" fill-opacity="1" id="g191" transform="translate(-81.128573,-349.72007)">
         <g transform="translate(78.659823,648.5552)" id="g189">
           <g id="g187">
             <path
@@ -71,7 +71,7 @@
           </g>
         </g>
       </g>
-      <g fill="#fafeff" fill-opacity="1" id="g199" transform="translate(-81.128573,-349.72007)">
+      <g fill="#ffffff" fill-opacity="1" id="g199" transform="translate(-81.128573,-349.72007)">
         <g transform="translate(187.14383,648.5552)" id="g197">
           <g id="g195">
             <path
@@ -81,7 +81,7 @@
           </g>
         </g>
       </g>
-      <g fill="#fafeff" fill-opacity="1" id="g207" transform="translate(-81.128573,-349.72007)">
+      <g fill="#ffffff" fill-opacity="1" id="g207" transform="translate(-81.128573,-349.72007)">
         <g transform="translate(300.32841,648.5552)" id="g205">
           <g id="g203">
             <path
@@ -91,7 +91,7 @@
           </g>
         </g>
       </g>
-      <g fill="#fafeff" fill-opacity="1" id="g215" transform="translate(-81.128573,-349.72007)">
+      <g fill="#ffffff" fill-opacity="1" id="g215" transform="translate(-81.128573,-349.72007)">
         <g transform="translate(410.42049,648.5552)" id="g213">
           <g id="g211">
             <path
@@ -101,7 +101,7 @@
           </g>
         </g>
       </g>
-      <g fill="#fafeff" fill-opacity="1" id="g223" transform="translate(-81.128573,-349.72007)">
+      <g fill="#ffffff" fill-opacity="1" id="g223" transform="translate(-81.128573,-349.72007)">
         <g transform="translate(521.74958,648.5552)" id="g221">
           <g id="g219">
             <path
@@ -111,7 +111,7 @@
           </g>
         </g>
       </g>
-      <g fill="#fafeff" fill-opacity="1" id="g231" transform="translate(-81.128573,-349.72007)">
+      <g fill="#ffffff" fill-opacity="1" id="g231" transform="translate(-81.128573,-349.72007)">
         <g transform="translate(630.23359,648.5552)" id="g229">
           <g id="g227">
             <path
@@ -121,7 +121,7 @@
           </g>
         </g>
       </g>
-      <g fill="#fafeff" fill-opacity="1" id="g239" transform="translate(-81.128573,-349.72007)">
+      <g fill="#ffffff" fill-opacity="1" id="g239" transform="translate(-81.128573,-349.72007)">
         <g transform="translate(629.25679,537.95047)" id="g237">
           <g id="g235">
             <path
@@ -131,7 +131,7 @@
           </g>
         </g>
       </g>
-      <g fill="#fafeff" fill-opacity="1" id="g247" transform="translate(-81.128573,-349.72007)">
+      <g fill="#ffffff" fill-opacity="1" id="g247" transform="translate(-81.128573,-349.72007)">
         <g transform="translate(663.22462,362.56595)" id="g245">
           <g id="g243">
             <path
@@ -160,13 +160,13 @@ onMounted(() => {
   timeline.set('.logo-path', { visibility: "visible", drawSVG: '0' });
 
   timeline.to('.logo-path', { drawSVG: 'true', duration: 5, ease: 'power1' })
-    .to('.logo-path', { fill: '#fafeff', stroke: 'transparent', duration: 2 })
+    .to('.logo-path', { fill: '#ffffff', stroke: 'transparent', duration: 2 })
 })
 </script>
 <style>
 .logo-path {
   fill: none;
-  stroke: #fafeff;
+  stroke: #ffffff;
   stroke-width: 1px;
   visibility: hidden;
 }
