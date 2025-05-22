@@ -117,4 +117,12 @@ onMounted(() => {
 const colorMode = useColorMode()
 
 onBeforeMount(() => colorMode.preference = 'dark')
+
+useSeoMeta({
+  title: 'Ritmo Astral | Inicio',
+  ogTitle: 'Ritmo Astral',
+  description: 'En Ritmo Astral creemos en la magia de reconectar contigo mismo. Creamos experiencias únicas de meditación, música medicinal y Ecstatic Dance en lo alto de la ciudad',
+  ogDescription: 'En Ritmo Astral creemos en la magia de reconectar contigo mismo. Creamos experiencias únicas de meditación, música medicinal y Ecstatic Dance en lo alto de la ciudad',
+  ogImage: '/index.png',
+})
 </script>
