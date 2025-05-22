@@ -1,5 +1,5 @@
 <template>
-  <div class="h-dvh w-full flex flex-col justify-center">
+  <div class="h-screen w-full flex flex-col justify-center">
     <div class="md:col-span-1 flex items-center justify-center">
       <h2 class="text-4xl md:text-7xl font-serif text-center">
         Lo que ofrecemos

@@ -1,5 +1,5 @@
 <template>
-  <div class="h-dvh w-full flex flex-col justify-center items-center">
+  <div class="h-screen w-full flex flex-col justify-center items-center">
     <h2 class="text-4xl md:text-5xl font-serif text-center">
       Permítenos conectar contigo
     </h2>

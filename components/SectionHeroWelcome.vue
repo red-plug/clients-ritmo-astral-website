@@ -1,5 +1,5 @@
 <template>
-  <div ref="container" class="flex justify-center items-center px-4 md:px-0 h-dvh relative w-full">
+  <div ref="container" class="flex justify-center items-center px-4 md:px-0 h-screen relative w-full">
     <ClientOnly>
       <!-- <Vortex :base-hue="200" :range-y="300" class="flex size-full flex-col items-center justify-center px-2 py-4 md:px-10"> -->
         <div class="flex size-full flex-col items-center justify-center px-2 py-4 md:px-10">

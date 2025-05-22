@@ -3,7 +3,7 @@
     <div class="fixed inset-0 z-0 bg-deep-blue-space">
       <ClientOnly>
         <Vortex :base-hue="200" :range-y="300">
-          <div class="w-full h-dvh"></div>
+          <div class="w-full h-screen"></div>
         </Vortex>  
       </ClientOnly>
     </div>
