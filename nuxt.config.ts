@@ -1,5 +1,4 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import Theme from "./themes/default"
 
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
@@ -26,27 +25,11 @@ export default defineNuxtConfig({
   ],
   modules: [
     '@nuxtjs/tailwindcss',
-    '@primevue/nuxt-module',
     '@nuxtjs/color-mode',
     '@nuxt/icon',
     '@nuxt/fonts',
     '@vueuse/nuxt'
   ],
-  primevue: {
-    options: {
-      theme: {
-        preset: Theme,
-        options: {
-          darkModeSelector: '.dark-mode',
-          cssLayer: {
-            name: 'primevue',
-            order: 'tailwind-base, primevue, tailwind-utilities'
-          }
-        }
-      },
-      ripple: true,
-    },
-  },
   colorMode: {
 
   },
