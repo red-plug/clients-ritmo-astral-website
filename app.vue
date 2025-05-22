@@ -12,9 +12,7 @@
         <component :is="componentSection">
         </component>
       </section>
-    </div>
-    <div class="w-full h-24 md:h-0">
-
+      <AppFooter />
     </div>
   </main>
 </template>
@@ -22,6 +20,7 @@
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { SectionHeroWelcome, SectionOurEssence, SectionWhatWeOffer, SectionCosmicPurpose, SectionConnectWithUs } from '#components'
+import AppFooter from "./components/AppFooter.vue";
 
 if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger);

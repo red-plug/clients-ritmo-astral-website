@@ -4,8 +4,8 @@
       <div class="w-full max-w-lg py-4">
         <LogoDrawing class="w-full" />
       </div>
-      <h2 ref="subtitle" class="text-4xl md:text-3xl font-serif mt-4 text-center invisible">
-        Tu círculo de energía
+      <h2 ref="subtitle" class="text-4xl mt-6 text-center invisible">
+        Medita, Baila y Vibra desde las alturas
       </h2>
     </div>
     <Icon id="icon-down" name="heroicons:chevron-down" class="absolute bottom-4 text-4xl opacity-50 animate-bounce" />
