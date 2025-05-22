@@ -2,7 +2,7 @@
   <main class="text-base">
     <div class="fixed inset-0 z-0 bg-deep-blue-space">
       <ClientOnly>
-        <Vortex :base-hue="215" :range-y="500" :base-speed="0.5" :range-speed="0.05">
+        <Vortex :base-hue="215" :range-y="500" :base-speed="0.25" :range-speed="0.025">
           <div class="w-full h-screen backdrop-blur-xs md:backdrop-blur-none"></div>
         </Vortex>  
       </ClientOnly>
