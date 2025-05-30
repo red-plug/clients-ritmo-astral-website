@@ -8,6 +8,13 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'es'
       },
+      script: [
+        {
+          src: 'https://analytics.ahrefs.com/analytics.js',
+          'data-key': 'n4K5Fvw3Ej8gYSWlKauoLA',
+          async: true
+        }
+      ]
     },
   },
   fonts: {
