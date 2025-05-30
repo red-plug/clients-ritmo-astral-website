@@ -9,13 +9,13 @@
       </GradientButton>
     </div>
     <div class="flex justify-center gap-x-12 mt-12 text-4xl">
-      <a href="https://www.instagram.com/ritmo.astral.remedios" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.instagram.com/ritmo.astral.remedios" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
         <Icon name="cib:instagram" />
       </a>
-      <a href="mailto:contacto@ritmoastral.com?subject=Estoy%20interesado%20en%20sus%20servicios%20de%20sanación" target="_blank" rel="noopener noreferrer">
+      <a href="mailto:contacto@ritmoastral.com?subject=Estoy%20interesado%20en%20sus%20servicios%20de%20sanación" target="_blank" rel="noopener noreferrer" aria-label="Correo Electrónico">
         <Icon name="cib:gmail" />
       </a>
-      <a href="https://www.facebook.com/share/15u5zCkbmR" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.facebook.com/share/15u5zCkbmR" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
         <Icon name="cib:facebook" />
       </a>
     </div>
